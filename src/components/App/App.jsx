@@ -15,7 +15,6 @@ export default class App extends Component {
     page: 1,
     loading: false,
     modal: false,
-    status: 'idle',
   };
 
   componentDidMount() {
@@ -46,7 +45,7 @@ export default class App extends Component {
     }
     try {
       this.setState({ loading: true });
-      const { hits, totalHits } = await fetchData(request, page);
+      const { hits } = await fetchData(request, page);
 
       if (hits.length === 0) {
         return alert('Sorry, images not found...');
