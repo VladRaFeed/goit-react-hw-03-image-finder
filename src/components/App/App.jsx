@@ -83,7 +83,7 @@ export default class App extends Component {
   };
 
   render() {
-    const { loading, images, modal, largeImage, status } = this.state;
+    const { loading, images, modal, largeImage } = this.state;
 
     return (
       <div className={css.app}>
