@@ -9,8 +9,6 @@ axios.defaults.params = {
   per_page: 12,
 };
 
-const API_KEY = '39014637-350db469d238078cedfe93bb7';
-
 // https://pixabay.com/api/?q=cat&page=1&key=your_key&image_type=photo&orientation=horizontal&per_page=12
 
 const fetchData = async (request, page) => {
